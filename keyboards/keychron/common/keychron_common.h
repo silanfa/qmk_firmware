@@ -30,17 +30,8 @@ enum custom_keycodes {
     KC_ROPTN,
     KC_LCMMD,
     KC_RCMMD,
-    KC_SIRI,
-    KC_TASK_VIEW,
-    KC_FILE_EXPLORER,
-    KC_SCREEN_SHOT,
-    KC_CORTANA
+    KC_SIRI
 };
-
-#define KC_TASK KC_TASK_VIEW
-#define KC_FLXP KC_FILE_EXPLORER
-#define KC_SNAP KC_SCREEN_SHOT
-#define KC_CRTA KC_CORTANA
 
 typedef struct PACKED {
     uint8_t len;
