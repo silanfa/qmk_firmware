@@ -28,7 +28,7 @@
 #define MATRIX_MASKED
 
 /* Disable RGB lighting when PC is in suspend */
-#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define RGB_DISABLE_WHEN_USB_SUSPENDED true
 #define RGBLIGHT_SLEEP
 
 // RGB Matrix Animation modes. Explicitly enabled
