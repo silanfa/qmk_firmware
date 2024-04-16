@@ -93,20 +93,6 @@ bool process_record_keychron(uint16_t keycode, keyrecord_t *record) {
                 // Do something else when release
             }
             return false; // Skip all further processing of this key
-        case KC_TASK:
-        case KC_FLXP:
-        case KC_SNAP:
-        case KC_CRTA:
-            if (record->event.pressed) {
-                for (uint8_t i = 0; i < key_comb_list[keycode - KC_TASK].len; i++) {
-                    register_code(key_comb_list[keycode - KC_TASK].keycode[i]);
-                }
-            } else {
-                for (uint8_t i = 0; i < key_comb_list[keycode - KC_TASK].len; i++) {
-                    unregister_code(key_comb_list[keycode - KC_TASK].keycode[i]);
-                }
-            }
-            return false; // Skip all further processing of this key
         default:
             return true; // Process all other keycodes normally
     }
