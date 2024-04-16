@@ -38,11 +38,6 @@ enum custom_keycodes {
     KC_CORTANA
 };
 
-#define KC_TASK KC_TASK_VIEW
-#define KC_FLXP KC_FILE_EXPLORER
-#define KC_SNAP KC_SCREEN_SHOT
-#define KC_CRTA KC_CORTANA
-
 typedef struct PACKED {
     uint8_t len;
     uint8_t keycode[3];
